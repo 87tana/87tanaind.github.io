@@ -1,92 +1,94 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Tannaz's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<head>
+	<title>Tannaz's Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar" style="width: 160px; height: 160px;"><img src="images/Tannaz_square.png" alt="" /></a>
-					<h1><strong>Hi! I am Tannaz Mostafid</strong>,<br> Data Scientist <br> with a background in image analysis. </a></h1>
-					<hr>
-					<i class="fas fa-map-marker-alt"></i> Munich, Germany
-				</div>
+	<!-- Sidebar -->
+	<header id="header">
+		<div class="inner">
+			<a href="#" class="image avatar" style="width: 160px; height: 160px;">
+				<img src="images/Tannaz_square.png" alt="Tannaz Mostafid" />
+			</a>
+			<h1 style="font-size: 1.2em; font-weight: bold; margin-bottom: 0.5em;">Tannaz Mostafid</h1>
+			<h2 style="font-size: 1em; font-weight: normal; margin: 0;">
+				Data Scientist<br>
+				<span style="font-size: 0.9em; font-weight: lighter;">with a background in image analysis</span>
+			</h2>
+			<hr style="margin: 1em 0;">
+			<p><i class="fas fa-map-marker-alt"></i> Munich, Germany</p>
+			<ul class="icons">
+				<li><a href="mailto:your.email@example.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="https://github.com/87tana" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+		<section id="one">
+			<header class="major">
+				<h2>My recent projects</h2>
 			</header>
+			<div class="row">
 
-		<!-- Main -->
-			<div id="main">
+				<article class="col-6 col-12-xsmall work-item">
+					<h3>Adaptive RAG Chatbot for Semantic Data Exploration</h3>
+					<p>Developed a scalable RAG chatbot with Azure OpenAI, Cognitive Search, Blob Storage, and LangChain. It features auto-adaptive text ingestion, a Streamlit UI, and Dockerized deployment on Azure.</p>
+					<p><i><b>RAG, Azure OpenAI, LangChain, Cognitive Search, Docker, Streamlit</b></i></p>
+					<a href="images/rag_chatbot.png" class="image fit thumb"><img src="images/rag_chatbot.png" alt="RAG Chatbot" /></a>
+				</article>
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>My recent projects</h2>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3>Deep Learning-Based Bone Fracture Detection in X-Ray Images with Dockerized Web Deployment</h3> 
-								<p>This is ongoing project aims to develop and validate deep learning models for detecting bone fractures in medical X-ray images using object detection methods.
-								 It involves training convolutional neural networks to accurately detect and classify fractures, ensuring high diagnostic accuracy. 
-								 In addition, a web application was created using FastAPI and Streamlit, and containerised using Docker for efficient and reliable deployment. 
-								<p><i><b>Deep Learning, Optimization , Object detection</b></i></p> 
-								<a href="https://github.com/87tana/YOLO11n-Bone-Fracture-Detection-Model" class="icon brands fa-github"><span class="label">Github</span></a></p>
-								<a href="images/YOLO.png" class="image fit thumb"><img src="images/YOLO.png" alt="" /></a>
-							</article>							
-						</header>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<!--<a href="..." class="image fit thumb"><img src="images/cifar10pics.jpg" alt="" /></a> <-->
-								<h3> Optimizing Deep Learning Architectures for Accurate image Segmentation in Medical Imaging</h3>
-								<p>In this project, I investigated how different deep learning techniques can improve the accuracy of tumor segmentation in 2D MRI brain images. 
-									I compared two popular neural network architectures, ResNet-18 and VGG-16, to see which performed better for this task. 
-									I also tested different methods to improve the model, including different modifications of the network structure and data augmentation to increase the diversity of the training data. 
-									In addition, I compared two types of loss functions that guide the model's optimization process. The results showed that ResNet-18 outperformed VGG-16. 
-									Using certain advanced techniques, such as dilated convolutions, improved segmentation quality, and data augmentation helped the model generalize better to new images. 
-									Overall, these adjustments resulted in more accurate and reliable tumor detection in MRI scans.
-									<br><br>
-									<p><i><b>Python, Deep Learning, PyTorch, Image Segmentation</b></i></p>   
-									<a href="https://github.com/87tana/SemanticSegmentation-in-Medical-Imaging" class="icon brands fa-github"><span class="label">Github</span></a>
-									<a href="images/tumor_segmentation.png" class="image fit thumb"><img src="images/tumor_segmentation.png" alt="" /></a>
-								</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<!--<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/confusion_DT.jpg" alt="" /></a> <-->
-								<h3>Comparing Deep Learning Architectures for Accurate Object Classification</h3>
-								<p>In this project, I evaluated four deep learning models, including VGG16, ResNet50, Xception, and MobileNet, which have different sizes and structures, to identify the most effective model for classifying objects in 2D MRI brain images. 
-									To improve the performance of the models, I applied techniques such as data augmentation and normalization. 
-									Each model was then fine-tuned using advanced optimization techniques and loss functions. 
-									I found that selecting the most appropriate model depends on the specific requirements of the task, with each model offering a different trade-off between accuracy and computational efficiency.
-									<br><br>
-									<p><i><b>Python, Deep Learning, TensorFlow, Keras, Image Classification, Unbalanced Datasets</b></i></p>   
-									<a href="https://github.com/87tana/ImageObjectClassification_NetworkComparison" class="icon brands fa-github"><span class="label">Github</span></a>
-									<a href="images/sanple_images_brain_tumor_dataset.png" class="image fit thumb"><img src="images/sanple_images_brain_tumor_dataset.png" alt="" /></a>
-								</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3>Customer Churn Prediction</h3>
-								<p> In this project, I developed and validated a customer churn prediction model using a machine learning approach for an advertising company, achieving 85% accuracy on their imbalanced dataset. 
-									I compared Logistic Regression, SVC, XGBClassifier, and a Forward Neural Network (FNN). I also performed hyperparameter tuning to improve performance. 
-									Logistic Regression and XGBClassifier showed the best results, the FNN also performed well, while SVC was less effective at handling class imbalances.
-								<br><br>
-								<p><i><b>Python, Machine Learning, Deep Learning, Deploy, Streamlit,FastAPI</i></p>
-									<a href="https://github.com/87tana/Churn_Prediction_ML_DeepL" class="icon brands fa-github"><span class="label">Github</span></a></p>
-									<a href="images/churn_webapp.png" class="image fit thumb"><img src="images/churn_webapp.png" alt="" /></a>
-							</article>
-							
-						
-							
-						</div>
-						<!--<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul> -->
-						
-						
+				<article class="col-6 col-12-xsmall work-item">
+					<h3>End-to-End Object Detection: From Model Development to Scalable Cloud Deployment</h3>
+					<p>Deployed a full-stack deep learning application for real-time object detection, combining a custom-trained model with a FastAPI backend and Streamlit frontend. Containerized the system with Docker and deployed on Azure Cloud.</p>
+					<p><i><b>Deep Learning, FastAPI, Streamlit, Docker, Azure Cloud</b></i></p>
+					<a href="images/object_detection.png" class="image fit thumb"><img src="images/object_detection.png" alt="Object Detection" /></a>
+				</article>
 
-					</section>
-							
+				<article class="col-6 col-12-xsmall work-item">
+					<h3>Deep Learning-Based Bone Fracture Detection in X-Ray Images</h3>
+					<p>Built a YOLO-based model to detect fractures in X-ray images. Deployed the model as a web application using Docker, FastAPI, and Streamlit.</p>
+					<p><i><b>Deep Learning, Optimization, Object Detection</b></i></p>
+					<a href="https://github.com/87tana/YOLO11n-Bone-Fracture-Detection-Model" class="icon brands fa-github"><span class="label">GitHub</span></a>
+					<a href="images/YOLO.png" class="image fit thumb"><img src="images/YOLO.png" alt="Bone Fracture Detection" /></a>
+				</article>
+
+				<article class="col-6 col-12-xsmall work-item">
+					<h3>Optimizing Architectures for Tumor Segmentation in MRI</h3>
+					<p>Investigated ResNet-18 vs. VGG-16 on MRI segmentation. Used dilated convolutions and augmentation to improve generalization and performance.</p>
+					<p><i><b>Python, Deep Learning, PyTorch, Image Segmentation</b></i></p>
+					<a href="https://github.com/87tana/SemanticSegmentation-in-Medical-Imaging" class="icon brands fa-github"><span class="label">GitHub</span></a>
+					<a href="images/tumor_segmentation.png" class="image fit thumb"><img src="images/tumor_segmentation.png" alt="Tumor Segmentation" /></a>
+				</article>
+
+				<article class="col-6 col-12-xsmall work-item">
+					<h3>Comparing Architectures for Object Classification</h3>
+					<p>Compared VGG16, ResNet50, Xception, and MobileNet on classifying MRI brain image types. Fine-tuned with augmentation and optimization techniques.</p>
+					<p><i><b>Python, Deep Learning, TensorFlow, Keras, Classification</b></i></p>
+					<a href="https://github.com/87tana/ImageObjectClassification_NetworkComparison" class="icon brands fa-github"><span class="label">GitHub</span></a>
+					<a href="images/sanple_images_brain_tumor_dataset.png" class="image fit thumb"><img src="images/sanple_images_brain_tumor_dataset.png" alt="Classification Models" /></a>
+				</article>
+
+				<article class="col-6 col-12-xsmall work-item">
+					<h3>Customer Churn Prediction</h3>
+					<p>Built a machine learning pipeline to predict churn using Logistic Regression, SVC, XGBoost, and Neural Networks. Deployed with Streamlit.</p>
+					<p><i><b>Python, ML, Streamlit, FastAPI, Deployment</b></i></p>
+					<a href="https://github.com/87tana/Churn_Prediction_ML_DeepL" class="icon brands fa-github"><span class="label">GitHub</span></a>
+					<a href="images/churn_webapp.png" class="image fit thumb"><img src="images/churn_webapp.png" alt="Churn Prediction" /></a>
+				</article>
+
+			</div>
+		</section>
+	</div>
+
+</body>
+</html>
+
 
 				<!-- Three -->
 				<!--
@@ -441,7 +443,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 			</div>
 
-		<!-- Footer -->
+		<!-- Footer 
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
@@ -451,6 +453,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				</div>
 				
 			</footer>
+			-->
 		
 
 		<!-- Scripts -->
